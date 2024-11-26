@@ -1,0 +1,109 @@
+.merriweather-normal {
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+.merriweather-bold {
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+:root {
+	--background: #f3f3f3;
+	--black: #1f1f1f;
+	--no: #ff5e5e;
+	--notransparent: rgba(255, 94, 94, 0.6);
+	--yes: #67ff94;
+	--yestransparent: rgba(103, 255, 148, 0.6);
+}
+body > div {
+	background-color: var(--background);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+#header {
+	color: var(--background);
+	width: 100%;
+	height: 10%;
+	background-color: var(--black);
+	font-size: 5vmin;
+	text-align: center;
+}
+#lower {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#cards {
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2%;
+}
+img {
+	max-width: 20%;
+	max-height: 20%;
+}
+#textbox {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+}
+input {
+	width: 33%;
+	height: 33%;
+}
+button {
+	height: 33%;
+}
+input:focus {
+	transition-duration: 250ms;
+	background-color: var(--yestransparent);
+}
+#toppointer {
+	position: absolute;
+	width: 20%;
+	height: 4%;
+	top: 46%;
+	left: 0;
+	text-align: center;
+	text-wrap: nowrap;
+	font-size: 4vmin;
+}
+#stats {
+	position: absolute;
+	width: 20%;
+	height: 3%;
+	top: 47%;
+	left: 80%;
+	text-align: center;
+	text-wrap: nowrap;
+	font-size: 3vmin;
+}
+.correct {
+	transition-property: background;
+	transition-duration: 250ms;
+	transition-timing-function: linear;
+	background: var(--yestransparent);
+}
+.wrong {
+	transition-property: background;
+	transition-duration: 250ms;
+	transition-timing-function: linear;
+	background: var(--notransparent);
+}
